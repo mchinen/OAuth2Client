@@ -551,7 +551,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7,
+					armv7s,
+					arm64,
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/OAuth2Client.dst;
@@ -574,7 +579,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7,
+					armv7s,
+					arm64,
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/OAuth2Client.dst;
 				GCC_MODEL_TUNING = G5;
